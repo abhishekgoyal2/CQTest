@@ -20,14 +20,7 @@ static WebDriver  driver ;
 	{
 	
 	
-//driver =new FirefoxDriver();
-//		
-//	driver.manage().window().maximize();
 
-//		 String  Appurl ="http://10.123.134.117:8080/";
-//			driver.get(Appurl);
-//			Reporter.log("Application launched",true);
-//driver.get("http://10.123.134.117:8080/");
 
 		Qa_ST_home qa_Stlogin =new Qa_ST_home(driver);
 
