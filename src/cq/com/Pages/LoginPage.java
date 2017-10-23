@@ -26,7 +26,7 @@ static WebDriver driver ;
 		
 		driver.manage().window().maximize();
 
- String  Appurl ="http://10.123.134.117:8080/";
+ String  Appurl ="https://plusqa.cq.com/login";
 			driver.get(Appurl);
 			Reporter.log("Application launched",true);
 //			driver.manage().wait();

@@ -1,11 +1,11 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
-  
-<suite name="CQxmlsuitetest" verbose="1" >
-  <test name="demoxml" >
-    <classes>
-       <class name="BaseClassCQPackage.CQLogin" />
-     </classes>
-  </test>
- 
-  
+
+<suite name="CQxmlsuitetest" verbose="1">
+	<test name="demoxml">
+		<classes>
+			<class name="BaseClassCQPackage.CQLogin" />
+		</classes>
+	</test>
+
+
 </suite>
