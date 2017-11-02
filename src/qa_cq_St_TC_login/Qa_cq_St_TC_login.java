@@ -19,7 +19,8 @@ static WebDriver  driver ;
 	public void verifyvalidlogin() throws InterruptedException
 	{
 	
-	
+		System.setProperty("webdriver.gecko.driver", "D:/software/geckodriver-v0.19.0-win64/geckodriver.exe");
+
 
 
 		Qa_ST_home qa_Stlogin =new Qa_ST_home(driver);
