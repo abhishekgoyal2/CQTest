@@ -16,7 +16,8 @@ public class Qa_ST_home {
 		By Loginbutton =By.xpath("html/body/div[2]/form/input");
 		
 		By AlertOk = By.xpath(".//*[@class='button ok-button']");
-		
+		By AdvancedSearch =By.xpath(".//*[@id='id3'and@class='search-advanced']");
+		By Statemap = By.xpath(".//*[@id='sideRailTerritory-NH']");
 		public static WebDriver setupBrowser() {
 			Reporter.log("Session started",true);
 			driver =new FirefoxDriver();
@@ -52,6 +53,16 @@ public class Qa_ST_home {
 			driver.findElement(Loginbutton).click();
 		}
 		
+		
+		public void AdvancedSearch ()
+		{
+			driver.findElement(AdvancedSearch).click();
+		}
+		
+		public void Statemapclickonhomepage()
+		{
+			driver.findElement(Statemap).click();
+		}
 		public  void Alert( )
 		{
 			driver.findElement(AlertOk).click();

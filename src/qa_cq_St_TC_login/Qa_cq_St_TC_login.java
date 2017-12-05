@@ -18,15 +18,10 @@ static WebDriver  driver ;
 	@Test
 	public void verifyvalidlogin() throws InterruptedException
 	{
-
-//		
-		System.setProperty("webdriver.gecko.driver", "D:/software/geckodriver-v0.19.0-win64/geckodriver.exe");
-
+		System.setProperty("webdriver.gecko.driver", "C:/Projects/geckodriver-v0.16.0-win64/geckodriver.exe");
 
 
 		Qa_ST_home qa_Stlogin =new Qa_ST_home(driver);
-
-			
 
 		Qa_ST_home.setupBrowser();
 		qa_Stlogin.typeusername("abhishek.goyal2@globallogic.com");
@@ -35,11 +30,16 @@ static WebDriver  driver ;
 		Thread.sleep(1000);
 		qa_Stlogin.clickOnLoginButton();
 		
+//		Thread.sleep(5000);
+	
+//		qa_Stlogin.Statemapclickonhomepage();
+		
 		Thread.sleep(3000);
+	qa_Stlogin.AdvancedSearch();
 //		login.Alert();
 		
 		Thread.sleep(1000);
-		qa_Stlogin.CloseBrowser();
+		Qa_ST_home.CloseBrowser();
 		
 	
 	}
