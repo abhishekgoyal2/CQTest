@@ -6,6 +6,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class qa_St_Main {
 
+	@SuppressWarnings("unused")
 	public static void main(String[] args) throws InterruptedException {
 		
 		 WebDriver driver ;
@@ -19,26 +20,27 @@ public class qa_St_Main {
 			driver.manage().window().maximize();
 			String  Appurl ="http://cdev-st01.cq.com:8080/watershed/login?";
 	driver.get(Appurl);
-			@SuppressWarnings("unused")
-			By AdvancedSearch =By.xpath(".//*[@id='id3'and@class='search-advanced']");
-			By Statemap = By.xpath(".//*[@id='sideRailTerritory-NH']");
-			  By username =By.xpath(".//*[@id='username']");
-				By password = By.xpath("html/body/div[2]/form/div[2]/input");
-				By Loginbutton =By.xpath("html/body/div[2]/form/input");
 			
-				
-					driver.findElement(username).sendKeys("abhishek.goyal2@globallogic.com");
+//			By AdvancedSearch =By.xpath(".//*[@id='id3'and@class='search-advanced']");
+//			By Statemap = By.xpath(".//*[@id='sideRailTerritory-NH']");
+//			  By username =By.xpath(".//*[@id='username']");
+//				By password = By.xpath("html/body/div[2]/form/div[2]/input");
+//				By Loginbutton =By.xpath("html/body/div[2]/form/input");
+			
+			
+			driver.findElement(By.xpath(".//*[@id='username']")).sendKeys("abhishek.goyal2@globallogic.com");
+
 				Thread.sleep(2000);
-					driver.findElement(password).sendKeys("Welcome@01");
+					driver.findElement(By.xpath("html/body/div[2]/form/div[2]/input")).sendKeys("Welcome@01");
 					Thread.sleep(2000);
 
-					driver.findElement(Loginbutton).click();
+					driver.findElement(By.xpath("html/body/div[2]/form/input")).click();
 					Thread.sleep(4000);
 
-//				driver.findElement(AdvancedSearch).click();
+			driver.findElement(By.xpath(".//*[@id='id3'and@class='search-advanced']")).click();
 			
 			
-				driver.findElement(Statemap).click();
+//				driver.findElement(Statemap).click();
 		
 				Thread.sleep(2000);
 
