@@ -18,7 +18,7 @@ static WebDriver  driver ;
 	@Test
 	public void verifyvalidlogin() throws InterruptedException
 	{
-		System.setProperty("webdriver.gecko.driver", "D:/software/geckodriver-v0.19.0-win64/geckodriver.exe");
+//		System.setProperty("webdriver.gecko.driver", "D:/software/geckodriver-v0.19.0-win64/geckodriver.exe");
 
 	
 //driver =new FirefoxDriver();
@@ -37,7 +37,7 @@ LoginPage login =new LoginPage(driver);
 LoginPage.setupBrowser();
 		login.typeusername("abhishek.goyal2@globallogic.com");
 		Thread.sleep(1000);
-		login.typepassword("Welcome@01");
+		login.typepassword("Welcome@12");
 		Thread.sleep(1000);
 		login.clickOnLoginButton();
 		
